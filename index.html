@@ -18,6 +18,7 @@
             <nav>
                 <a href="#introduction">Introduction</a>
                 <a href="#creation">Chatbot Creation</a>
+                <a href="#description-of-main-modules-used">Modules Descriptions</a>
                 <a href="#training">Training</a>
                 <a href="#integration">Integration</a>
                 <a href="#deployment">Deployment</a>
@@ -35,12 +36,39 @@
     <main class="container">
         <section id="introduction">
             <h2>Introduction</h2>
-            <p>Hello! I am Deva, pursuing Bachelor of Computer Applications. As part of my final semester I did internshipat IGIAT-Vishakapatnam.Indo German Institute of Advanced Technologies - IGIAT in vishakapatnam is known for its advanced technical education & skill development programs. I am so grateful to join their internship program, which was totally focused on <b>"Application Development Using Python"</b>. Our program was well-organized, with covering a wide range of topics over several weeks. We started from scratch with basics of computer science concepts and moved on to more advanced python programming techniques. The highlight of our internship was creating a chatbot using "<code>chatterbot</code>" framework and "<code>flask</code>" as web framework to give interface to the project. This project allowed us to use the skills we had learned.</p>
+            <p>Hello! I am Deva, pursuing Bachelor of Computer Applications. As part of my final semester I did internship at IGIAT-Vishakapatnam.Indo German Institute of Advanced Technologies - IGIAT in vishakapatnam is known for its advanced technical education & skill development programs. I am so grateful to join their internship program, which was totally focused on <b>"Application Development Using Python"</b>. Our program was well-organized, with covering a wide range of topics over several weeks. We started from scratch with basics of computer science concepts and moved on to more advanced python programming techniques. The highlight of our internship was creating a chatbot using "<b><code style="font-size: 19px;">chatterbot</code></b>" framework and "<b><code style="font-size: 19px;">flask</code></b>" as web framework to give interface to the project. This project allowed us to use the skills we had learned.</p>
         </section>
         <section id="creation">
             <h2>Chatbot Creation</h2>
-            <p>The first step in my project was to create the basic structure of the chatbot using the ChatterBot library. I set up the environment, installed necessary packages, and initialized the chatbot. This involved configuring the chatbot to use various adapters and setting up the database to store conversations. Below is a glimpse of the directory structure:</p>
-            <img src="" alt="Directory Structure">
+            <p>During our internship, we did entire coursework on python about 11 weeks, by covering basic topics to more advanced topics like web scraping, web development, and working with api's many more. For the actual internship of 15 weeks, the remaining 4 weeks were alloted and assigned for us to do the project work based on the skills that we have attained on coursework. So for the project we have choosen to create a ChatBot, for myself I named it as <b>Vortex-BOT</b>, and based on this theme, we researched about the resources that would enhance the functionality of our chatbot. We later on found that <b>Chatterbot</b> and <b>Rasa</b> are the most popular frameworks used by python developers to train the chatbot, and create the chatbots. So based on their merits and demerits we choosen <b><code style="font-size: 19px;">chatterbot</code></b> for our project. We gained the exposure on its documentation <a href="https://chatterbot.readthedocs.io/en/stable/" target="_blank">Here!</a>. After gaining the theoretical exposure on Chatterbot library, we were started to create a virtual environment for our project. This virtual envirtual environment is named as <b>Internship-Project</b>. We installed <b><code style="font-size: 19px;">virtualenv</code></b> framework to create a virtual-environment. This further allowed us to work on isolated environment with no disturbances on memory level. After creating the virtual environment the directory structure would look like as follows</p>
+            <img src="images/directory-structure.png" alt="Directory Structure">
+            <p>After, this to install all the modules in the virutal environment we tried to activate the virtual environment on terminal or command-prompt using the following command:<br><B>For Windows</B><br><code style="font-size: 19px;">Internship-Project\Scripts\activate</code><br><B>For Mac & Linux</B><br><code style="font-size: 19px;">source Internship-Project/bin/activate</code><br>After activating the virutal environments, we started to install all the necesssary modules to work on our project ChatBot.</p>
+            <img src="images/modules-installed(requirements).png" alt="Modules Required">
+            <p>You can find the detailed repository of our project at <a href="https://github.com/devamanikantasala/Internship-Project-Repository" target="_blank">Github</a> within that you can find the <a href="https://raw.githubusercontent.com/devamanikantasala/Internship-Project-Repository/main/requirements.txt" target="_blank">requirements.txt</a> file that holds all the modules that have been installed to create our chatbot.</p>
+        </section>
+        <section id="description-of-main-modules-used">
+            <h2>Modules Descriptions</h2>
+            <p>
+                <strong>ChatterBot :</strong> ChatterBot is a machine learning, conversational dialog engine for creating chatbots. It is language-independent and can be trained to respond in various languages by using different sets of data. <br>
+                <strong><em><u>How ChatterBot uses SQLite :</u></em></strong> ChatterBot uses SQLite as a storage adapter to store conversation data. When you initialize a ChatterBot instance, you can specify the storage adapter as SQLite, which is useful for smaller applications or for development purposes due to its simplicity and serverless architecture. ChatterBot saves and retrieves data using SQL queries, enabling the bot to learn from interactions and improve its responses over time. <br>
+                <strong>Key Features :</strong> Language-independent, Extensible with various storage adapters, Can be trained using different datasets, Implements logic adapters to determine responses. <br><br>
+                
+                <strong>Google :</strong> Google is a multinational technology company specializing in Internet-related services and products. These include online advertising technologies, search engines, cloud computing, software, and hardware. Google is widely known for its search engine, which is one of the most used and influential tools on the internet. <br>
+                <strong>Key Features :</strong> Search Engine, Google Cloud Platform, Gmail, Google Maps, YouTube, Android operating system. <br><br>
+                
+                <strong>google-generativeai :</strong> Google Generative AI refers to Google's advancements in generative models, particularly in natural language processing and image generation. These AI models can create text, images, and even music by learning patterns from large datasets. <br>
+                <strong>Key Features :</strong> Text generation and completion, Image generation, Advanced natural language understanding, Applications in creative content creation. <br><br>
+                
+                <strong>PyYAML:</strong> PyYAML is a Python library for YAML (YAML Ain't Markup Language), a human-readable data serialization format. PyYAML provides easy and intuitive methods to parse and produce YAML. <br>
+                <strong>Key Features :</strong> Load and dump YAML data, Support for various data types, Custom serialization and deserialization, Integration with Python data structures. <br><br>
+                
+                <strong>NLTK (Natural Language Toolkit) :</strong> NLTK is a leading platform for building Python programs to work with human language data. It provides easy-to-use interfaces to over 50 corpora and lexical resources along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning. <br>
+                <strong>Key Features :</strong> Text processing libraries, Corpora and lexical resources, Classification and machine learning tools, Parsing and semantic reasoning capabilities. <br><br>
+                
+                <strong>SQLAlchemy :</strong> SQLAlchemy is a SQL toolkit and Object-Relational Mapping (ORM) library for Python. It provides a full suite of well-known enterprise-level persistence patterns, designed for efficient and high-performing database access. <br>
+                <strong>Key Features :</strong> Database-independent ORM, Core SQL construction and execution, Connection pooling and transaction management, Comprehensive documentation and tutorials. <br>
+                <strong><em><u>Usage in Applications :</u></em></strong> SQLAlchemy is used to map Python classes to database tables, making it easier to handle database operations using Python code. It supports a wide range of database backends, including SQLite, PostgreSQL, MySQL, Oracle, and Microsoft SQL Server.
+            </p>
         </section>
         <section id="training">
             <h2>Training the Chatbot</h2>
