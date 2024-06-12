@@ -37,7 +37,7 @@
                 
             <nav>
                 <a href="#introduction">Introduction</a>
-                <a href="#creation">Chatbot Creation</a>
+                <a href="#creation">Environment Setup</a>
                 <a href="#description-of-main-modules-used">Modules Descriptions</a>
                 <a href="#training">Training</a>
                 <a href="#integration">Integration</a>
@@ -52,7 +52,7 @@
             <p>Hello! I am Deva, pursuing Bachelor of Computer Applications. As part of my final semester I did internship at IGIAT-Vishakapatnam.Indo German Institute of Advanced Technologies - IGIAT in vishakapatnam is known for its advanced technical education & skill development programs. I am so grateful to join their internship program, which was totally focused on <b>"Application Development Using Python"</b>. Our program was well-organized, with covering a wide range of topics over several weeks. We started from scratch with basics of computer science concepts and moved on to more advanced python programming techniques. The highlight of our internship was creating a chatbot using "<b><code style="font-size: 19px;">chatterbot</code></b>" framework and "<b><code style="font-size: 19px;">flask</code></b>" as web framework to give interface to the project. This project allowed us to use the skills we had learned.</p>
         </section>
         <section id="creation">
-            <h2>Chatbot Creation</h2>
+            <h2>Environment Setup</h2>
             <p>During our internship, we did entire coursework on python about 11 weeks, by covering basic topics to more advanced topics like web scraping, web development, and working with api's many more. For the actual internship of 15 weeks, the remaining 4 weeks were alloted and assigned for us to do the project work based on the skills that we have attained on coursework. So for the project we have choosen to create a ChatBot, for myself I named it as <b>Vortex-BOT</b>, and based on this theme, we researched about the resources that would enhance the functionality of our chatbot. We later on found that <b>Chatterbot</b> and <b>Rasa</b> are the most popular frameworks used by python developers to train the chatbot, and create the chatbots. So based on their merits and demerits we choosen <b><code style="font-size: 19px;">chatterbot</code></b> for our project. We gained the exposure on its documentation <a href="https://chatterbot.readthedocs.io/en/stable/" target="_blank">Here!</a>. After gaining the theoretical exposure on Chatterbot library, we were started to create a virtual environment for our project. This virtual envirtual environment is named as <b>Internship-Project</b>. We installed <b><code style="font-size: 19px;">virtualenv</code></b> framework to create a virtual-environment. This further allowed us to work on isolated environment with no disturbances on memory level. After creating the virtual environment the directory structure would look like as follows</p>
             <img src="images/directory-structure.png" alt="Directory Structure">
             <p>After, this to install all the modules in the virutal environment we tried to activate the virtual environment on terminal or command-prompt using the following command:<br><B>For Windows</B><br><code style="font-size: 19px;">Internship-Project\Scripts\activate</code><br><B>For Mac & Linux</B><br><code style="font-size: 19px;">source Internship-Project/bin/activate</code><br>After activating the virutal environments, we started to install all the necesssary modules to work on our project ChatBot.</p>
@@ -62,6 +62,7 @@
         <section id="description-of-main-modules-used">
             <h2>Modules Descriptions</h2>
             <p>
+                The following are the key modules that are used for our project ChatBot. We used the following modules to accomplish objectives from basic functionality of chatbot to giving it user interface so that user can interact with chatbot-Vortex.The following gives a breif description of the modules that are used. <br><br>
                 <strong>chatterBot :</strong> ChatterBot is a machine learning, conversational dialog engine for creating chatbots. It is language-independent and can be trained to respond in various languages by using different sets of data. <br>
                 <strong><em><u>How ChatterBot uses SQLite :</u></em></strong> ChatterBot uses SQLite as a storage adapter to store conversation data. When you initialize a ChatterBot instance, you can specify the storage adapter as SQLite, which is useful for smaller applications or for development purposes due to its simplicity and serverless architecture. ChatterBot saves and retrieves data using SQL queries, enabling the bot to learn from interactions and improve its responses over time. <br>
                 <strong>Key Features :</strong> Language-independent, Extensible with various storage adapters, Can be trained using different datasets, Implements logic adapters to determine responses. <br><br>
@@ -120,6 +121,23 @@
             <p>Additionally, I recorded two videos, in Telugu to explain the process of creating the chatbot and guide my teammates on how to accomplish similar projects, you can access them <a href="sites/telugu-videos.html" target="_blank">here!</a>.</p>
         </section>
     </main>
+    <footer class="footer">
+        <h2>Let's Get in touch</h2>
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/devamanikantasala" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="https://linkedin.com/in/devamanikantasala" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="mailto:devamanikantasala@outlook.com">
+              <ion-icon name="mail"></ion-icon>
+            </a></li>
+        </ul>
+        <p>&copy;2024 Deva Manikanta Sala | All Rights Reserved</p>
+      </footer>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
     <script src="scripts/script.js"></script>
 </body>
 </html>
